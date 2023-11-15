@@ -17,7 +17,7 @@ public class AnimationActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(AnimationActivity.this,MainActivity.class));
+                startActivity(new Intent(AnimationActivity.this,LoginActivity.class));
                 finish();
             }
         },3000);
