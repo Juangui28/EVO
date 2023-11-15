@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
@@ -18,6 +19,7 @@ public class LoginActivity extends AppCompatActivity {
     EditText username;
     EditText password;
     Button loginButton;
+    TextView signUpText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +38,7 @@ public class LoginActivity extends AppCompatActivity {
         username = findViewById(R.id.username);
         password = findViewById(R.id.password);
         loginButton = findViewById(R.id.loginButton);
+        signUpText = findViewById(R.id.signupText);
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,6 +54,12 @@ public class LoginActivity extends AppCompatActivity {
                 }else {
                     Toast.makeText(LoginActivity.this, "Login Failed!", Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+        signUpText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoginActivity.this, RegistroActivity.class));
             }
         });
     }
