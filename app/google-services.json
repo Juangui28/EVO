@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1065254972981",
+    "firebase_url": "https://evobd-8644f-default-rtdb.firebaseio.com",
+    "project_id": "evobd-8644f",
+    "storage_bucket": "evobd-8644f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1065254972981:android:8a14583617d4db69f90b7c",
+        "android_client_info": {
+          "package_name": "com.juanguillermo.evo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcQPsIghRrRzvAvELAnOjfL1ZaIwdFbzQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
