@@ -14,16 +14,10 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.AuthResult;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 
 public class RegistroActivity extends AppCompatActivity {
 
-    EditText signupUsername, signupEmail,signupPassword;
+    EditText signupEmail, signupPassword;
     TextView loginRedirectText, exploreRedirectText;
     Button signupButton;
 
@@ -43,12 +37,13 @@ public class RegistroActivity extends AppCompatActivity {
             getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         }
 
-        signupUsername = findViewById(R.id.usernameSignup);
         signupEmail = findViewById(R.id.emailSignup);
         signupPassword = findViewById(R.id.passwordSignup);
         signupButton = findViewById(R.id.registerButton);
         loginRedirectText = findViewById(R.id.signInText);
         exploreRedirectText = findViewById(R.id.exploreText);
+
+
 
         exploreRedirectText.setOnClickListener(new View.OnClickListener() {
             @Override
