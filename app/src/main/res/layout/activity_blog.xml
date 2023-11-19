@@ -1,0 +1,38 @@
+<!-- res/layout/activity_blog.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnBackToMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volver a Inicio"
+        android:layout_below="@id/textDate"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/textTitleBlog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Título del Blog"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/textContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contenido del Blog"
+        android:layout_below="@id/textTitleBlog"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/textDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha de Publicación: XX/XX/XXXX"
+        android:layout_below="@id/textContent"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
